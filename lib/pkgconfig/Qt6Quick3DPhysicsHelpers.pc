@@ -1,0 +1,13 @@
+prefix=/home/shubham/qt-rpi/qt6-aarch64
+exec_prefix=${prefix}
+bindir=${prefix}/bin
+libexecdir=${prefix}/./libexec
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: Qt6 Quick3DPhysicsHelpers
+Description: Qt Quick3DPhysicsHelpers module
+Version: 6.5.2
+Libs: -L${libdir} -lQt6Quick3DPhysicsHelpers
+Cflags: -I${includedir}/QtQuick3DPhysicsHelpers -I${includedir} -DQT_QUICK3DPHYSICSHELPERS_LIB
+Requires: Qt6Qml Qt6Quick Qt6Quick3D

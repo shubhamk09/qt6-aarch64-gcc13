@@ -1,0 +1,13 @@
+prefix=/home/shubham/qt-rpi/qt6-aarch64
+exec_prefix=${prefix}
+bindir=${prefix}/bin
+libexecdir=${prefix}/./libexec
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: Qt6 ScxmlQml
+Description: Qt ScxmlQml module
+Version: 6.5.2
+Libs: -L${libdir} -lQt6ScxmlQml
+Cflags: -I${includedir}/QtScxmlQml -I${includedir} -DQT_SCXMLQML_LIB
+Requires: Qt6Core Qt6Qml Qt6Scxml
